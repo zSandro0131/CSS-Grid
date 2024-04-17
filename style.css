@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px 300px ;
+    justify-content: center;
+
+    grid-template-areas: "red blue"
+    "green blue"
+    "green yellow";
+}
+
+.green {
+    background-color: green;
+    grid-area: green;
+}
+.red {
+    background-color: red;
+    grid-area: red;
+}
+
+.blue {
+    background-color: blue;
+    grid-area: blue;
+}
+
+.yellow {
+    background-color: yellow;
+    grid-area: yellow;
+}
